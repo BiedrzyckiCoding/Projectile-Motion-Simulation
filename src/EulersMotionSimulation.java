@@ -28,7 +28,7 @@ public class EulersMotionSimulation {
         dvx.add(0.0);
         dvy.add(0.0);
 
-        for (int i = 1; i < 21; i++) {
+        for (int i = 1; i < 22; i++) {
             //compute the changes
             double dvx_i = gx * dt;
             double dvy_i = gy * dt;
@@ -54,7 +54,7 @@ public class EulersMotionSimulation {
         }
 
         //print results
-        for (int i = 0; i < 21; i++) {
+        for (int i = 0; i < 22; i++) {
             System.out.print(sx.get(i));
             System.out.print(" " + sy.get(i));
             System.out.print(" " + vx.get(i));
