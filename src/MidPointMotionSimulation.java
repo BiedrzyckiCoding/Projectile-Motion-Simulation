@@ -22,7 +22,7 @@ public class MidPointMotionSimulation {
         vx.add(10.0);
         vy.add(10.0);
 
-        for (int i = 1; i < 50; i++) {
+        for (int i = 1; i < 21; i++) {
             //compute midpoint velocities
             double vx_mid = vx.get(i - 1) + (dt / 2) * ((gx * m - kA * vx.get(i - 1)) / m);
             double vy_mid = vy.get(i - 1) + (dt / 2) * ((gy * m - kA * vy.get(i - 1)) / m);
@@ -47,7 +47,7 @@ public class MidPointMotionSimulation {
         }
 
         //print results
-        for (int i = 0; i < 50; i++) {
+        for (int i = 0; i < 21; i++) {
             System.out.print(sx.get(i));
             System.out.print(" " + sy.get(i));
             System.out.print(" " + vx.get(i));
